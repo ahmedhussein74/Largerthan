@@ -1,0 +1,31 @@
+.active {
+  color: #f2c94c;
+  font-weight: bold;
+}
+
+.bg {
+  height: calc(100vh - 60px);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("../images/bg.jpeg");
+}
+
+.marquee {
+  user-select: none;
+}
+
+.marquee__group {
+  animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% - 50px));
+  }
+}
